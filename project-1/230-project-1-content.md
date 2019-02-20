@@ -22,9 +22,9 @@ The main mechanics of this game are moving and rotating a constellation to match
 The player will be taught how to play the game using the Controls. Once the controls are learned, the first few constellations will ease them into solving harder ones.
 ### Player Learning
 As the player completes more puzzles, they will learn how to identify certain patterns in the sky that relate to the constellation they are currently trying to solve. Audio and Visual cues will also be used to indicate how close or far the player is from solving a puzzle. The player can use these cues to their advantage when solving puzzles.
-### Screenshots
+## Screenshots
 Title Screen - Start will start the game from the beginning, Menu lets the player choose a level, and Random picks a random level.
 
 In Game screenshot - including a hamburger style menu button, an outline representing the constellation, and yellow dots representing where it needs to go.
-### About the Developer
+## About the Developer
 My name is Aditya (Deetz) Gopinath, and I am a 5th year Computer Engineering Technology major at RIT. I enjoy playing video games, space, and learning about computers in general. While designing Synchro Space, my biggest inspiration came from playing the Mass Effect series, and more recently, Kingdom Hearts 3. In Mass Effect, I love exploring the galaxy map, finding resources, and learning about all the planets in the game. And in Kingdom Hearts 3, I really enjoyed finding the constellations scattered throughout the world. These two experiences gave me the idea for Synchro Space, a puzzle game that takes place in space!
