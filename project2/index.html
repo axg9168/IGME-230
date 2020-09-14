@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokemon Team Builder | Home</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/skeleton.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header class="twelve columns">
+        <h1>Pokemon Team Builder</h1>
+        <ul id="pages">
+            <li class="links"><a href="index.html">Home</a></li>
+            <li class="links"><a href="documentation.html">Documentation</a></li>
+        </ul>
+    </header>
+    <p id="bottomBorderPls"></p>
+    <div id="wrapper">
+        <nav>
+            <div class="buttons">
+                <button type="button" id="pokemonBtn" class="pokeball">Search by<br>Pokemon</button>
+            </div>
+            <div class="buttons">
+                <button type="button" id="typeBtn" class="pokeball">Search by<br>Type</button>
+            </div>
+            <div class="buttons">
+                <button type="button" id="abilityBtn" class="pokeball">Search by<br>Ability</button>
+            </div>
+        </nav>
+        
+        <section class="eight columns">
+            <div class="widgets"></div>
+        </section>
+    </div>
+    
+    <div id="extras">
+        <p>Don't know what you want? Enter a number from 1-807 and get the associated Pokemon!</p>
+        <input id="searchByNumber" type="text" size="20" maxlength="20" placeholder="Enter a number...">
+        <button type="button" id="numBtn" class="pokeball">Go!</button>
+        <div id="error"></div>
+    </div>
+
+    <h2>Results</h2>
+    <div id="content" class="six columns">
+        <p>No data yet!</p>
+    </div>
+</body>
+</html>
