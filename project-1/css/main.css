@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+html, body{
+    margin: 0;
+}
+
+h1{
+    color: #40FFDC; /*taken from https://www.colourlovers.com/palette/3348506/Interstellar */
+    font-size: 250%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Megrim', cursive;
+    background-color: #1C0021; /*taken from https://www.colourlovers.com/palette/3348506/Interstellar */
+}
+
+section, aside, article, nav{
+    color: #FFFFFF;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+section, aside{
+    background-color: #1C3166; /*taken from https://www.colourlovers.com/palette/3348506/Interstellar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.happy{
+    color: #1C3166;
+}
+
+nav{
+    background-color: #240047; /*taken from https://www.colourlovers.com/palette/3348506/Interstellar */
+}
+
+article{
+    background-color: #131313;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 125%;
+}
+
+#starry{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 2em;
+}
+
+.proj{
+    display: flex;
+    flex-direction: row;
+    padding-right: 1.5em;
+}
+/*
+.bio{
+    font-weight: bold;
+}*/
+
+a:link{
+    color: #40FFDC;
+}
+a:visited{
+    color: #00A9D4;
+}
+a:hover{
+    color: #0ACC4C;
+}
+a:active{
+    color: #9E3A3A;
+}
+
+/*****************
+Grid Formatting
+*****************/
+
+#wrapper{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header" "menu" "sidenav" "article" "sidebar";
+    grid-template-rows: 1fr 0.5fr 1fr 12fr 1fr;
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: menu;
+}
+
+section{
+    grid-area: sidenav;
+}
+
+article{
+    grid-area: article;
+}
+
+aside{
+    grid-area: sidebar;
+}
+
+@media screen and (min-width: 720px){
+    #wrapper{
+        grid-template-areas: "header header header"
+        "menu menu menu"
+        "sidenav article sidebar";
+        grid-template-rows: 1fr 0.5fr 15fr;
+        grid-template-columns: 15% auto 15%;
+    }
+}
